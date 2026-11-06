@@ -4,19 +4,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ShieldCheck, Download, QrCode, Sparkles, CheckCircle2, ArrowRight } from "lucide-react";
-import PhoneMockup from "./PhoneMockup";
+import InteractiveHeroHub from "./InteractiveHeroHub";
 
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden bg-grid">
+    <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-grid">
       {/* Top Ambient Glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[450px] bg-gradient-to-b from-emerald-500/20 via-teal-500/10 to-transparent blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[500px] bg-gradient-to-b from-emerald-500/20 via-teal-500/10 to-transparent blur-3xl pointer-events-none -z-10" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
           {/* Left Column: Headlines & CTA */}
-          <div className="lg:col-span-7 space-y-8 text-center lg:text-left">
+          <div className="lg:col-span-6 space-y-8 text-center lg:text-left">
             
             {/* Pill Announcement */}
             <motion.div
@@ -25,9 +25,9 @@ export default function Hero() {
               className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs sm:text-sm font-medium backdrop-blur-sm shadow-sm"
             >
               <Sparkles className="w-4 h-4 text-emerald-400" />
-              <span>Yangi avlod xavfsiz Telegram mijozi</span>
+              <span>O'zbekiston uchun yangi avlod Telegram mijozi</span>
               <span className="w-1 h-1 rounded-full bg-emerald-400"></span>
-              <span className="text-gray-300">v1.0.0 chiqqan</span>
+              <span className="text-gray-300 font-mono">v1.0.0</span>
             </motion.div>
 
             {/* Main Headline */}
@@ -38,21 +38,22 @@ export default function Hero() {
               className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.12]"
             >
               Telegram endi{" "}
-              <span className="text-gradient">mutlaqo xavfsiz</span> va{" "}
+              <span className="text-gradient">kiberxavfsiz</span> va{" "}
               <span className="text-gradient-cyan">aqlli</span>.
             </motion.h1>
 
-            {/* Subtext */}
+            {/* Subtext highlighting true Android capabilities */}
             <motion.p
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
               className="text-base sm:text-lg text-gray-300/90 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal"
             >
-              Zararli APK fayllar, soxta havolalar va firibgarlardan avtomatik himoyalanish.
-              Chatdagi bank kartalarini bir lahzada aniqlang va <strong className="text-white font-semibold">Click</strong>,{" "}
+              Zararli APK troyanlarni yuklanmasdan avtomatik bloklash. Chatdagi bank kartalariga{" "}
+              <strong className="text-white font-semibold">Click</strong>,{" "}
               <strong className="text-white font-semibold">Payme</strong>, hamda{" "}
-              <strong className="text-white font-semibold">Uzum Bank</strong> orqali 1 soniyada xavfsiz to'lov qiling.
+              <strong className="text-white font-semibold">Uzum Bank</strong> orqali 1 soniyada to'lov, shuningdek{" "}
+              <span className="text-emerald-300">Ruh rejimi</span> va <span className="text-emerald-300">Anti-Delete</span> imkoniyatlari.
             </motion.p>
 
             {/* CTA Buttons & QR Row */}
@@ -98,8 +99,7 @@ export default function Hero() {
               transition={{ delay: 0.4 }}
               className="hidden sm:flex items-center gap-4 p-4 rounded-2xl bg-[#0f172a]/70 border border-white/10 backdrop-blur-md max-w-md"
             >
-              <div className="w-16 h-16 bg-white p-1 rounded-xl shadow-md shrink-0 flex items-center justify-center">
-                {/* Visual SVG QR Code placeholder pointing to Google Play */}
+              <div className="w-14 h-14 bg-white p-1 rounded-xl shadow-md shrink-0 flex items-center justify-center">
                 <svg className="w-full h-full text-black" viewBox="0 0 29 29" fill="currentColor">
                   <path d="M0,0 h7 v7 h-7 z M2,2 h3 v3 h-3 z M22,0 h7 v7 h-7 z M24,2 h3 v3 h-3 z M0,22 h7 v7 h-7 z M2,24 h3 v3 h-3 z M9,0 h2 v7 h-2 z M13,0 h3 v2 h-3 z M18,0 h2 v4 h-2 z M9,9 h4 v2 h-4 z M15,9 h3 v4 h-3 z M20,9 h2 v3 h-2 z M24,9 h5 v2 h-5 z M9,13 h2 v3 h-2 z M12,13 h1 v2 h-1 z M14,15 h3 v3 h-3 z M19,14 h2 v4 h-2 z M23,13 h2 v2 h-2 z M26,14 h3 v2 h-3 z M0,9 h2 v3 h-2 z M4,9 h3 v3 h-3 z M0,14 h4 v2 h-4 z M6,14 h2 v3 h-2 z M9,18 h2 v3 h-2 z M12,19 h2 v2 h-2 z M16,19 h4 v2 h-4 z M22,17 h4 v2 h-4 z M27,18 h2 v4 h-2 z M9,23 h3 v2 h-3 z M14,23 h2 v4 h-2 z M18,23 h3 v2 h-3 z M23,21 h2 v2 h-2 z M22,25 h5 v2 h-5 z M24,27 h3 v2 h-3 z M9,27 h4 v2 h-4 z M18,27 h2 v2 h-2 z" />
                 </svg>
@@ -107,10 +107,10 @@ export default function Hero() {
               <div className="text-left">
                 <div className="text-xs font-semibold text-white flex items-center gap-1.5">
                   <QrCode className="w-3.5 h-3.5 text-emerald-400" />
-                  Kamerangiz orqali skanerlang
+                  Kamera orqali skanerlang
                 </div>
                 <p className="text-[11px] text-gray-400 mt-0.5 leading-snug">
-                  Smartfon kamerasini yo'naltiring va to'g'ridan-to'g'ri telefoningizga o'rnating.
+                  Smartfon kamerasini yo'naltiring va to'g'ridan-to'g'ri o'rnating.
                 </p>
               </div>
             </motion.div>
@@ -119,23 +119,23 @@ export default function Hero() {
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs text-gray-400">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>Rasmiy Telegram API</span>
+                <span>Rasmiy Telegram MTProto</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>Zero-Log Maxfiylik</span>
+                <span>Offline Luhn Tekshiruvi</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>100% Bepul & Ochiq</span>
+                <span>Ruh Rejimi & Anti-Delete</span>
               </div>
             </div>
 
           </div>
 
-          {/* Right Column: Phone Mockup Frame */}
-          <div className="lg:col-span-5 flex justify-center lg:justify-end">
-            <PhoneMockup />
+          {/* Right Column: Interactive Live HUD (Replaces generic Phone Mockup) */}
+          <div className="lg:col-span-6 flex justify-center">
+            <InteractiveHeroHub />
           </div>
 
         </div>

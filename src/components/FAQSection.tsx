@@ -11,29 +11,29 @@ interface FAQItem {
 
 const faqs: FAQItem[] = [
   {
-    question: "Safegram rasmiy Telegram bilan qanday bog'langan?",
+    question: "Safegram kiberxavfsizlik va antivirus tizimi qanday ishlaydi?",
     answer:
-      "Safegram rasmiy Telegram ochiq kodi (Telegram Android Source Code) va MTProto 2.0 protokoli asosida yaratilgan. Siz mavjud Telegram akkauntingiz bilan xuddi rasmiy ilovadagidek kirasiz — barcha kanallaringiz, guruhlaringiz, xabarlaringiz va kontaktlaringiz o'z joyida saqlanadi.",
+      "Safegram guruh va chatlarda tarqatilayotgan xavfli fayllarni yuklab olishdan oldin Magic Bytes va Android manifest ruxsatnomalarini (SMS tutish, Accessibility ruxsatlarini suiste'mol qilish) chuqur tahlil qiladi. Agar fayl fishing yoki banking troyani ekani aniqlansa, u avtomatik ravishda izolyatsiya qilinadi (Auto-Sanitize) va telefon xotirasiga o'tishi to'xtatiladi.",
   },
   {
-    question: "Mening yozishmalarim yoki bank kartam ma'lumotlari xavfsizmi?",
+    question: "Smart P2P kartalarni qanday aniqlaydi va bank ma'lumotlarim xavfsizmi?",
     answer:
-      "Ha, 100% xavfsiz. Safegram sizning shaxsiy ma'lumotlaringizni yoki yozishmalaringizni hech qachon o'zining uchinchi tomon serverlariga yubormaydi. Karta raqamlarini aniqlash (Luhn algoritmi) to'liq qurilmangizning o'zida (offline rejimda) soniyaning ulushida amalga oshiriladi va faqat siz tasdiqlaganingizdan so'ng rasmiy bank ilovalariga (Click, Payme, Uzum va h.k.) yo'naltiradi.",
+      "Chatdagi 16 xonali karta raqamlari (Uzcard, Humo, Visa, Mastercard) xalqaro Luhn matematik formulasi orqali 1 millisekundda, to'liq qurilmangizning o'zida (offline) tekshiriladi. Hech qanday karta raqami yoki to'lov ma'lumoti serverlarga yuborilmaydi. Karta raqamiga bosilganda telefoningizdagi rasmiy bank ilovasi (Click, Payme, Uzum, Kapitalbank) to'g'ridan-to'g'ri ochiladi.",
   },
   {
-    question: "Antivirus tizimi qanday ishlaydi va telefonni sekinlashtirmaydimi?",
+    question: "Ruh rejimi (Ghost Mode) va Anti-Delete qanday ishlaydi?",
     answer:
-      "Safegram'ga o'rnatilgan kiberxavfsizlik moduli faqat guruh va chatlarda yuboriladigan fayllarni (ayniqsa .apk formatidagi dasturlarni) yuklab olishdan oldin xesh va imzolari bo'yicha tahlil qiladi. U xotirani ortiqcha yuklamaydi, batareyani tejaydi va smartfon tezligiga mutlaqo salbiy ta'sir ko'rsatmaydi.",
+      "Safegram sozlamalarida Ruh rejimini faollashtirsangiz, siz o'qigan xabarlarda 'o'qildi' belgisi chiqmaydi, ovozli xabarlarni bildirmasdan eshitishingiz va Story'larni yashirin ko'rishingiz mumkin. Anti-Delete funksiyasi esa suhbatdoshingiz xabarni 'hamma uchun o'chirish' qilgan taqdirda ham, uning asl nusxasini sizning chat tarixingizda saqlab qoladi.",
   },
   {
-    question: "Smart P2P funksiyasida qaysi banklar va to'lov tizimlari mavjud?",
+    question: "Download Booster fayllarni qanday qilib 8 barobar tezroq yuklaydi?",
     answer:
-      "Safegram O'zbekistonning barcha ommabop bank va to'lov xizmatlarini qo'llab-quvvatlaydi: Click Up, Payme, Uzum Bank, Kapitalbank, Ipak Yo'li Mobile, Humo, Uzcard, Hamkorbank, Zoomrad (Aloqabank), Davrbank va boshqalar. Ro'yxat admin panel orqali doimiy ravishda yangilanib boradi.",
+      "Standart ilovalar faylni bitta oqim (single thread) orqali yuklaydi. Safegram'ning o'rnatilgan Download Booster moduli esa Telegram serverlariga 8 tagacha parallel ulanish hosil qiladi, natijada katta hajmdagi videolar, darsliklar va dasturlar maksimal tarmoq tezligida bir zumda yuklanadi.",
   },
   {
-    question: "Safegram ilovasidan foydalanish bepulmi?",
+    question: "Mavjud Telegram akkauntimdagi chatlarim va kanallarim saqlanib qoladimi?",
     answer:
-      "Ha, Safegram foydalanuvchilar uchun mutlaqo bepul. Unda bezovta qiluvchi bannerlar yoki yashirin to'lovlar yo'q.",
+      "Albatta! Safegram rasmiy Telegram MTProto 2.0 protokoli ustida ishlaydi. Telefon raqamingiz orqali kirganingizda barcha chatlaringiz, guruhlaringiz, media fayllaringiz va kontaktlaringiz 100% rasmiy Telegram serverlari bilan avtomatik sinxronlashadi.",
   },
 ];
 
@@ -57,7 +57,7 @@ export default function FAQSection() {
             Ko'p beriladigan savollar
           </h2>
           <p className="mt-3 text-base text-gray-400">
-            Safegram xavfsizligi va ishlash tamoyillari haqida batafsil ma'lumotlar.
+            Safegram imkoniyatlari, maxfiylik va ishlash tamoyillari haqida batafsil ma'lumotlar.
           </p>
         </div>
 

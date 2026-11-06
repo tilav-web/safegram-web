@@ -6,23 +6,23 @@ export default function StatsSection() {
   const stats = [
     {
       value: "99.9%",
-      label: "Zararli fayllarni aniqlash",
-      sublabel: "Zero-day troyan va fishing tahdidlari",
+      label: "Troyanlarni aniqlash",
+      sublabel: "Magic Bytes & Manifest ruxsatlari nazorati",
     },
     {
       value: "15+",
       label: "O'zbekiston banklari",
-      sublabel: "Click, Payme, Uzum, Humo & Uzcard",
+      sublabel: "Click, Payme, Uzum, Kapital & boshqalar",
     },
     {
-      value: "<1 ms",
-      label: "Karta tekshiruvi tezligi",
-      sublabel: "Xatosiz Luhn nazorati",
+      value: "8x",
+      label: "Download Booster",
+      sublabel: "8 ta parallel oqimda tezkor yuklash",
     },
     {
       value: "0",
       label: "Reklama va Trackerlar",
-      sublabel: "Mutlaqo toza va ochiq arxitektura",
+      sublabel: "Xufyona rejim & Anti-Delete kafolati",
     },
   ];
 
