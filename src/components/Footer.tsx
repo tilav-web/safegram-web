@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ShieldCheck, Heart } from "lucide-react";
+import { ShieldCheck } from "lucide-react";
+import { SITE_CONFIG } from "@/config/site";
 
 export default function Footer() {
   return (
@@ -23,7 +24,7 @@ export default function Footer() {
               <span className="text-lg font-bold text-white tracking-tight">Safegram</span>
             </Link>
             <p className="text-xs sm:text-sm text-gray-400 max-w-sm leading-relaxed">
-              Safegram — O'zbekiston kiberxavfsizlik talablariga moslashtirilgan, zararli dasturlardan himoyalangan va aqlli bank o'tkazmalariga ega xavfsiz Telegram mijozi.
+              Safegram — Kiberxavfsizlik talablariga to'liq javob beruvchi, zararli fayllardan himoyalangan va aqlli bank to'lovlariga ega yangi avlod xavfsiz aloqa platformasi.
             </p>
             <div className="flex items-center gap-1.5 text-xs text-emerald-400">
               <ShieldCheck className="w-4 h-4" />
@@ -47,7 +48,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="#p2p" className="hover:text-emerald-400 transition-colors">
-                  Aqlli P2P To'lovlar
+                  Aqlli To'lovlar
                 </Link>
               </li>
               <li>
@@ -69,7 +70,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://play.google.com/store/apps/details?id=org.telegram.messenger.web"
+                  href={SITE_CONFIG.playStoreUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-emerald-400 transition-colors"
@@ -79,7 +80,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://t.me/safegram_support"
+                  href={SITE_CONFIG.supportUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-emerald-400 transition-colors"
@@ -96,7 +97,7 @@ export default function Footer() {
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
           <p>© {new Date().getFullYear()} Safegram Security Lab. Barcha huquqlar himoyalangan.</p>
           <p className="flex items-center gap-1">
-            O'zbekistonda mehr bilan yaratilgan
+            Xavfsiz va ishonchli aloqa uchun
           </p>
         </div>
       </div>

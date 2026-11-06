@@ -13,27 +13,27 @@ const faqs: FAQItem[] = [
   {
     question: "Safegram kiberxavfsizlik va antivirus tizimi qanday ishlaydi?",
     answer:
-      "Safegram guruh va chatlarda tarqatilayotgan xavfli fayllarni yuklab olishdan oldin Magic Bytes va Android manifest ruxsatnomalarini (SMS tutish, Accessibility ruxsatlarini suiste'mol qilish) chuqur tahlil qiladi. Agar fayl fishing yoki banking troyani ekani aniqlansa, u avtomatik ravishda izolyatsiya qilinadi (Auto-Sanitize) va telefon xotirasiga o'tishi to'xtatiladi.",
+      "Safegram chatlarda tarqatilayotgan shubhali fayllarni yuklab olishdan oldin Magic Bytes va dastur ruxsatnomalarini (SMS tutish, ruxsatsiz kirish) chuqur tahlil qiladi. Agar fayl zararli troyan ekani aniqlansa, u avtomatik ravishda izolyatsiya qilinadi (Auto-Sanitize) va telefon xotirasiga o'tishi to'xtatiladi.",
   },
   {
     question: "Smart P2P kartalarni qanday aniqlaydi va bank ma'lumotlarim xavfsizmi?",
     answer:
-      "Chatdagi 16 xonali karta raqamlari (Uzcard, Humo, Visa, Mastercard) xalqaro Luhn matematik formulasi orqali 1 millisekundda, to'liq qurilmangizning o'zida (offline) tekshiriladi. Hech qanday karta raqami yoki to'lov ma'lumoti serverlarga yuborilmaydi. Karta raqamiga bosilganda telefoningizdagi rasmiy bank ilovasi (Click, Payme, Uzum, Kapitalbank) to'g'ridan-to'g'ri ochiladi.",
+      "Chatdagi 16 xonali karta raqamlari xalqaro Luhn matematik formulasi orqali 1 millisekundda, to'liq qurilmangizning o'zida (offline) tekshiriladi. Hech qanday karta raqami yoki to'lov ma'lumoti tashqi serverlarga yuborilmaydi. Karta raqamiga bosilganda qurilmadagi rasmiy bank ilovasi to'g'ridan-to'g'ri ochiladi.",
   },
   {
     question: "Ruh rejimi (Ghost Mode) va Anti-Delete qanday ishlaydi?",
     answer:
-      "Safegram sozlamalarida Ruh rejimini faollashtirsangiz, siz o'qigan xabarlarda 'o'qildi' belgisi chiqmaydi, ovozli xabarlarni bildirmasdan eshitishingiz va Story'larni yashirin ko'rishingiz mumkin. Anti-Delete funksiyasi esa suhbatdoshingiz xabarni 'hamma uchun o'chirish' qilgan taqdirda ham, uning asl nusxasini sizning chat tarixingizda saqlab qoladi.",
+      "Safegram sozlamalarida Ruh rejimini faollashtirsangiz, siz o'qigan xabarlarda 'o'qildi' belgisi chiqmaydi, ovozli xabarlarni bildirmasdan eshitishingiz va hikoyalarni yashirin ko'rishingiz mumkin. Anti-Delete funksiyasi esa suhbatdoshingiz xabarni 'hamma uchun o'chirish' qilgan taqdirda ham, uning asl nusxasini sizning chat tarixingizda saqlab qoladi.",
   },
   {
     question: "Download Booster fayllarni qanday qilib 8 barobar tezroq yuklaydi?",
     answer:
-      "Standart ilovalar faylni bitta oqim (single thread) orqali yuklaydi. Safegram'ning o'rnatilgan Download Booster moduli esa Telegram serverlariga 8 tagacha parallel ulanish hosil qiladi, natijada katta hajmdagi videolar, darsliklar va dasturlar maksimal tarmoq tezligida bir zumda yuklanadi.",
+      "Standart ilovalar faylni bitta oqim orqali yuklaydi. Safegram'ning o'rnatilgan Download Booster moduli esa bulutli serverlarga 8 tagacha parallel ulanish hosil qiladi, natijada katta hajmdagi videolar va hujjatlar maksimal tarmoq tezligida bir zumda yuklanadi.",
   },
   {
-    question: "Mavjud Telegram akkauntimdagi chatlarim va kanallarim saqlanib qoladimi?",
+    question: "Safegram ilovasidan foydalanish bepulmi?",
     answer:
-      "Albatta! Safegram rasmiy Telegram MTProto 2.0 protokoli ustida ishlaydi. Telefon raqamingiz orqali kirganingizda barcha chatlaringiz, guruhlaringiz, media fayllaringiz va kontaktlaringiz 100% rasmiy Telegram serverlari bilan avtomatik sinxronlashadi.",
+      "Ha, Safegram foydalanuvchilar uchun mutlaqo bepul. Unda bezovta qiluvchi bannerlar yoki yashirin to'lovlar mavjud emas.",
   },
 ];
 

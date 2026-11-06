@@ -9,7 +9,6 @@ import {
   Trash2, 
   History, 
   EyeOff, 
-  FileCheck2, 
   Cpu, 
   Smartphone,
   Lock,
@@ -31,11 +30,11 @@ export default function BentoGrid() {
             Nega aynan <span className="text-gradient">Safegram</span>?
           </h2>
           <p className="mt-4 text-base sm:text-lg text-gray-400">
-            Oddiy messenjerdan ancha ustun: chuqur kiberxavfsizlik, o'zbek banklari bilan integratsiya va xufyona qulayliklar.
+            Oddiy ilovadan ancha ustun: chuqur kiberxavfsizlik, aqlli to'lov integratsiyasi va maxfiy boshqaruv vositalari.
           </p>
         </div>
 
-        {/* Bento Grid Layout (6 items matching Android architecture) */}
+        {/* Bento Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           
           {/* Card 1: Antivirus & Threat Shield (Large 2-column) */}
@@ -55,14 +54,14 @@ export default function BentoGrid() {
                 Magic Bytes & Permission Scanner
               </span>
               <h3 className="text-2xl sm:text-3xl font-bold text-white mt-1">
-                Zararli APK, Troyan va Soxta Bank Ilovalarini Fosh Qilish
+                Zararli APK, Troyan va Soxta Ilovalarni Fosh Qilish
               </h3>
               <p className="mt-3 text-gray-300 text-sm sm:text-base leading-relaxed max-w-xl">
-                Chatlarda yuboriladigan fayllarni (ayniqsa rasm yoki video niqobi ostidagi APK fayllarni) yuklab olishdan oldin Magic Bytes va Android manifest ruxsatnomalari bo'yicha tahlil qiladi. SMS o'g'irlash yoki bank akkauntlariga yashirin kirish urinishlarini bir zumda to'xtatadi.
+                Chatlarda yuboriladigan fayllarni yuklab olishdan oldin Magic Bytes va manifest ruxsatnomalari bo'yicha tahlil qiladi. SMS o'g'irlash yoki bank akkauntlariga yashirin kirish urinishlarini bir zumda to'xtatadi.
               </p>
             </div>
 
-            {/* Visual threat log mock inside card */}
+            {/* Visual threat log mock */}
             <div className="mt-6 p-4 rounded-2xl bg-[#090d16]/80 border border-white/10 font-mono text-xs space-y-2">
               <div className="flex items-center justify-between text-gray-400 pb-1 border-b border-white/5">
                 <span>SAFEGRAM SECURITY ENGINE</span>
@@ -72,8 +71,8 @@ export default function BentoGrid() {
                 </span>
               </div>
               <div className="flex items-center justify-between text-gray-300">
-                <span className="text-red-400">BLOKLANDI: UzumBank_Yutuq_2026.apk</span>
-                <span className="text-gray-500">Fake Banking / Dropper</span>
+                <span className="text-red-400">BLOKLANDI: Update_Patch_Vip.apk</span>
+                <span className="text-gray-500">Spyware / Trojan.Dropper</span>
               </div>
               <div className="flex items-center justify-between text-gray-300">
                 <span className="text-emerald-400">HIMOYA: Auto-Sanitize & Isolate</span>
@@ -97,17 +96,17 @@ export default function BentoGrid() {
               </div>
               <span className="text-xs font-bold uppercase tracking-wider text-emerald-400">Smart P2P Hub</span>
               <h3 className="text-2xl font-bold text-white mt-1">
-                Luhn Algoritmi & 15+ O'zbek Banklari
+                Luhn Algoritmi & Tezkor To'lov
               </h3>
               <p className="mt-3 text-gray-300 text-sm leading-relaxed">
-                Yozishmalardagi karta raqamlarini (Uzcard 8600, Humo 9860, Visa, Mastercard) avtomatik ajratadi. Karta raqamiga bosganda Click, Payme, Uzum yoki Kapitalbank ochiladi.
+                Yozishmalardagi 16 xonali karta raqamlarini avtomatik ajratadi. Karta raqamiga bosilganda o'rnatilgan bank ilovalari orqali xavfsiz to'lov sahifasi ochiladi.
               </p>
             </div>
 
             <div className="mt-6 flex flex-wrap gap-1.5 pt-3 border-t border-white/5">
-              {["Click Up", "Payme", "Uzum Bank", "Kapitalbank", "Ipak Yo'li", "Hamkorbank"].map((bank) => (
-                <span key={bank} className="px-2 py-0.5 rounded-lg bg-white/5 text-[11px] text-gray-300 font-medium">
-                  {bank}
+              {["Avtomatik Karta Tanish", "Luhn Formulari", "Xavfsiz Deep Link", "Nusxa Olish"].map((feature) => (
+                <span key={feature} className="px-2.5 py-1 rounded-lg bg-white/5 text-[11px] text-emerald-300 font-medium border border-white/5">
+                  {feature}
                 </span>
               ))}
             </div>
@@ -128,7 +127,7 @@ export default function BentoGrid() {
                 Ruh Rejimi (Ghost Mode)
               </h3>
               <p className="mt-3 text-gray-300 text-sm leading-relaxed">
-                Siz xabarlarni o'qiganingiz, ovozli xabarlarni eshitganingiz yoki Story tomosha qilganingiz suhbatdoshga bildirilmaydi. "Yozmoqda..." holati ham yashirin qoladi.
+                Siz xabarlarni o'qiganingiz, ovozli xabarlarni eshitganingiz yoki hikoyalarni tomosha qilganingiz suhbatdoshga bildirilmaydi. "Yozmoqda..." holati ham yashirin qoladi.
               </p>
             </div>
 
@@ -185,7 +184,7 @@ export default function BentoGrid() {
                 8-Oqimli Multi-Stream Booster
               </h3>
               <p className="mt-3 text-gray-300 text-sm leading-relaxed">
-                Safegram fayllarni Telegram serverlaridan bitta oqimda emas, 8 ta parallel oqimda yuklab oladi. Katta video va fayllarni yuklash 5-10 barobar tezlashadi.
+                Fayllarni bulutli serverlardan bitta oqimda emas, 8 ta parallel oqimda yuklab oladi. Katta video va fayllarni yuklash bir necha barobar tezlashadi.
               </p>
             </div>
 

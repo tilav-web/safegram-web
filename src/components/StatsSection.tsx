@@ -11,8 +11,8 @@ export default function StatsSection() {
     },
     {
       value: "15+",
-      label: "O'zbekiston banklari",
-      sublabel: "Click, Payme, Uzum, Kapital & boshqalar",
+      label: "To'lov & Bank tizimlari",
+      sublabel: "Bir bosishda xavfsiz o'tish imkoniyati",
     },
     {
       value: "8x",

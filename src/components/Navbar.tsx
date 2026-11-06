@@ -3,7 +3,8 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ShieldCheck, Download, Menu, X, ArrowRight } from "lucide-react";
+import { Download, Menu, X } from "lucide-react";
+import { SITE_CONFIG } from "@/config/site";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -78,10 +79,10 @@ export default function Navbar() {
             </Link>
           </nav>
 
-          {/* CTA Buttons */}
+          {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="https://play.google.com/store/apps/details?id=org.telegram.messenger.web"
+              href={SITE_CONFIG.playStoreUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-teal-400 transition-all duration-200 shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:scale-[1.02] active:scale-[0.98]"
@@ -137,7 +138,7 @@ export default function Navbar() {
           </Link>
           <div className="pt-2">
             <a
-              href="https://play.google.com/store/apps/details?id=org.telegram.messenger.web"
+              href={SITE_CONFIG.playStoreUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 w-full py-3 rounded-xl text-center font-semibold text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg shadow-emerald-500/20"

@@ -40,50 +40,50 @@ export default function PrivacyPage() {
           <section className="space-y-2">
             <h2 className="text-xl font-bold text-white">1. Kirish va Umumiy Qoidalar</h2>
             <p>
-              Safegram ("biz", "bizning ilova") foydalanuvchilarning shaxsiy ma'lumotlari daxlsizligi va kiberxavfsizligini birlamchi qadriyat deb hisoblaydi. Ushbu Maxfiylik Siyosati Safegram Android ilovasidan foydalanish jarayonida ma'lumotlar qanday qayta ishlanishini tushuntiradi.
+              Safegram ("biz", "bizning ilova") foydalanuvchilarning shaxsiy ma'lumotlari daxlsizligi va kiberxavfsizligini birlamchi qadriyat deb biladi. Ushbu Maxfiylik Siyosati Safegram Android ilovasidan foydalanish jarayonida ma'lumotlar qay tartibda himoyalanishini belgilaydi.
             </p>
           </section>
 
           <section className="space-y-2">
-            <h2 className="text-xl font-bold text-white">2. Telegram MTProto va Xabarlar Daxlsizligi</h2>
+            <h2 className="text-xl font-bold text-white">2. Xabarlar Shifrlanishi va Daxlsizlik</h2>
             <p>
-              Safegram rasmiy Telegram API (MTProto 2.0 protokoli) asosida ishlaydi. Sizning barcha shaxsiy xabarlaringiz, media fayllaringiz, kanallaringiz va kontaktlaringiz bevosita Telegram rasmiy serverlari orqali shifrlanadi. Safegram jamoasi sizning yozishmalaringizni o'qish, nusxalash yoki o'zgartirish imkoniyatiga ega emas.
+              Sizning barcha shaxsiy xabarlaringiz, media fayllaringiz va kontaktlaringiz ilg'or 256-bitli shifrlash protokollari orqali himoyalanadi. Safegram jamoasi yoki uchinchi shaxslar sizning yozishmalaringizni o'qish, nusxalash yoki o'zgartirish imkoniyatiga ega emas.
             </p>
           </section>
 
           <section className="space-y-2">
-            <h2 className="text-xl font-bold text-white">3. Smart P2P va Bank Karta Raqamlari</h2>
+            <h2 className="text-xl font-bold text-white">3. Smart P2P va Karta Raqamlari</h2>
             <p>
-              Ilovada chatlardagi bank karta raqamlarini (Uzcard, Humo, Visa, Mastercard) aniqlash to'liq <strong>qurilmaning o'zida (offline rejimda)</strong> Luhn matematik algoritmi orqali amalga oshiriladi.
+              Ilovada chatlardagi 16 xonali to'lov kartalarini aniqlash to'liq <strong>qurilmaning o'zida (offline rejimda)</strong> xalqaro Luhn matematik algoritmi orqali amalga oshiriladi.
             </p>
             <ul className="list-disc list-inside space-y-1 text-gray-400 pl-2">
-              <li>Hech qanday karta raqami yoki to'lov ma'lumoti serverlarimizga yuborilmaydi.</li>
-              <li>Foydalanuvchi tugmani bosganda faqat rasmiy bank ilovalari (Click, Payme, Uzum va h.k.) chuqur havolalar (Deep Link) orqali ochiladi.</li>
+              <li>Hech qanday karta raqami yoki to'lov ma'lumoti serverlarga yuborilmaydi va saqlanmaydi.</li>
+              <li>Foydalanuvchi tasdiqlaganidan so'ng faqat qurilmada o'rnatilgan rasmiy to'lov va bank ilovalari orqali xavfsiz o'tish ta'minlanadi.</li>
             </ul>
           </section>
 
           <section className="space-y-2">
-            <h2 className="text-xl font-bold text-white">4. Antivirus va Xavfsizlik Skriningi</h2>
+            <h2 className="text-xl font-bold text-white">4. Kiberxavfsizlik va Antivirus Skriningi</h2>
             <p>
-              Guruh va chatlarda yuborilgan fayllar (.apk va h.k.) smartfonga zarar yetkazmasligi uchun xavfsizlik tekshiruvidan o'tkaziladi. Bu jarayonda shaxsiy fayllar mazmuni emas, faqat ularning xavfsizlik belgilari (xesh kodlari) tahlil qilinadi.
+              Guruh va chatlarda yuborilgan fayllar smartfonga zarar yetkazmasligi uchun xavfsizlik tekshiruvidan o'tkaziladi. Bu jarayonda shaxsiy fayllar mazmuni emas, faqat ularning xavfsizlik belgilari va ruxsatnomalari tahlil qilinadi.
             </p>
           </section>
 
           <section className="space-y-2">
             <h2 className="text-xl font-bold text-white">5. Uchinchi Tomonlar va Reklama</h2>
             <p>
-              Safegram foydalanuvchilarning ma'lumotlarini hech qanday uchinchi tomonlarga, marketologlarga yoki reklama agentliklariga sotmaydi va taqdim etmaydi. Ilovada foydalanuvchini kuzatuvchi (tracking) tijoriy reklama SDK'lari mavjud emas.
+              Safegram foydalanuvchilarning ma'lumotlarini hech qanday uchinchi tomonlarga yoki reklama agentliklariga sotmaydi va taqdim etmaydi. Ilovada foydalanuvchini kuzatuvchi tijoriy reklama trekerlari mavjud emas.
             </p>
           </section>
 
           <section className="space-y-2">
             <h2 className="text-xl font-bold text-white">6. Bog'lanish</h2>
             <p>
-              Maxfiylik siyosatiga oid savollar va takliflar bo'lsa, quyidagi aloqa kanallari orqali biz bilan bog'lanishingiz mumkin:
+              Maxfiylik siyosatiga oid savollar va takliflar bo'lsa, quyidagi rasmiy aloqa kanallari orqali bog'lanishingiz mumkin:
             </p>
             <p className="font-mono text-emerald-400">
               Email: support@safegram.uz <br />
-              Telegram: @safegram_support
+              Rasmiy portal: https://safegram.uz
             </p>
           </section>
         </div>

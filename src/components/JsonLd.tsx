@@ -1,3 +1,5 @@
+import { SITE_CONFIG } from "@/config/site";
+
 export default function JsonLd() {
   const schema = {
     "@context": "https://schema.org",
@@ -10,7 +12,7 @@ export default function JsonLd() {
       "price": "0",
       "priceCurrency": "USD"
     },
-    "description": "Safegram — O'zbekistondagi eng xavfsiz va aqlli Telegram mijozi. Real vaqtda viruslarni bloklash, bank kartalarini aqlli aniqlash va bir bosishda P2P o'tkazmalar.",
+    "description": "Safegram — Kiberxavfsiz va aqlli aloqa platformasi. Real vaqtda viruslarni bloklash, bank kartalarini aqlli aniqlash va bir bosishda xavfsiz to'lovlar.",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.9",
@@ -22,7 +24,7 @@ export default function JsonLd() {
       "url": "https://safegram.uz"
     },
     "softwareVersion": "1.0.0",
-    "downloadUrl": "https://play.google.com/store/apps/details?id=org.telegram.messenger.web"
+    "downloadUrl": SITE_CONFIG.playStoreUrl
   };
 
   return (

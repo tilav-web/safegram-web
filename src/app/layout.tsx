@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import JsonLd from "@/components/JsonLd";
+import { SITE_CONFIG } from "@/config/site";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -17,30 +18,27 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://safegram.uz"),
+  metadataBase: new URL(SITE_CONFIG.url),
   title: {
-    default: "Safegram — Kiberxavfsiz va Aqlli Telegram Mijozi | O'zbekiston",
+    default: "Safegram — Kiberxavfsiz va Aqlli Aloqa Platformasi",
     template: "%s | Safegram",
   },
   description:
-    "Safegram — O'zbekistondagi eng xavfsiz Telegram mijozi. Real vaqtda virus va troyanlarni bloklash, bank kartalarini aqlli aniqlash (Uzcard, Humo) va bir bosishda Click, Payme, Uzum Bank orqali o'tkazmalar.",
+    "Safegram — Yangi avlod kiberxavfsiz messenjeri. Real vaqtda virus va troyanlarni bloklash, bank kartalarini aqlli aniqlash va bir bosishda xavfsiz to'lovlar.",
   keywords: [
     "Safegram",
-    "Telegram xavfsiz",
-    "Telegram antivirus",
-    "Telegram O'zbekiston",
+    "xavfsiz messenjer",
+    "kiberxavfsizlik",
+    "antivirus ilova",
     "Smart P2P",
-    "Uzcard",
-    "Humo",
-    "Click Up",
-    "Payme",
-    "Uzum Bank",
-    "Karta o'tkazmalari",
-    "Telegram mod xavfsizlik",
-    "Antivirus ilova",
-    "Android Telegram",
+    "karta to'lovlari",
+    "karta aniqlash",
+    "Ruh rejimi",
+    "Ghost mode",
+    "Anti-Delete",
+    "Android xavfsiz ilova",
   ],
-  authors: [{ name: "Safegram Security Lab", url: "https://safegram.uz" }],
+  authors: [{ name: "Safegram Security Lab", url: SITE_CONFIG.url }],
   creator: "Safegram Security Lab",
   publisher: "Safegram Security Lab",
   formatDetection: {
@@ -56,17 +54,17 @@ export const metadata: Metadata = {
     apple: [{ url: "/safegram-icon.png", sizes: "180x180" }],
   },
   openGraph: {
-    title: "Safegram — Kiberxavfsiz va Aqlli Telegram Mijozi",
+    title: "Safegram — Kiberxavfsiz va Aqlli Aloqa Platformasi",
     description:
-      "Telegram endi mutlaqo xavfsiz va qulay. Real-vaqtli antivirus himoyasi va 1 soniyalik tezkor P2P bank o'tkazmalari.",
-    url: "https://safegram.uz",
+      "Mutlaqo xavfsiz va qulay aloqa platformasi. Real-vaqtli antivirus himoyasi va 1 soniyalik tezkor to'lovlar.",
+    url: SITE_CONFIG.url,
     siteName: "Safegram",
     images: [
       {
         url: "/safegram-logo.png",
         width: 1200,
         height: 630,
-        alt: "Safegram — Kiberxavfsiz Telegram Mijozi",
+        alt: "Safegram — Kiberxavfsiz Aloqa Platformasi",
       },
     ],
     locale: "uz_UZ",
@@ -74,9 +72,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Safegram — Kiberxavfsiz va Aqlli Telegram Mijozi",
+    title: "Safegram — Kiberxavfsiz va Aqlli Aloqa Platformasi",
     description:
-      "Zararli APK fayllardan himoya va kartalarga 1 bosishda o'tkazma imkoniyati. Google Play'dan yuklab oling.",
+      "Zararli fayllardan himoya va kartalarga 1 bosishda xavfsiz to'lov imkoniyati. Google Play'dan yuklab oling.",
     images: ["/safegram-logo.png"],
     creator: "@safegram_uz",
   },

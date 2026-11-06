@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Download, ShieldCheck, QrCode, Sparkles } from "lucide-react";
-import Image from "next/image";
+import { QrCode, Sparkles, CheckCircle2 } from "lucide-react";
+import { SITE_CONFIG } from "@/config/site";
 
 export default function DownloadCTA() {
   return (
@@ -30,21 +30,21 @@ export default function DownloadCTA() {
               </div>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
-                Telegram xavfsizligingizni <br className="hidden sm:inline" />
-                <span className="text-gradient">bugunoq kafolatlang</span>.
+                Aloqa xavfsizligingizni <br className="hidden sm:inline" />
+                <span className="text-gradient">bugunoq ta'minlang</span>.
               </h2>
 
               <p className="text-gray-300 text-base sm:text-lg max-w-xl">
-                O'zbekistondagi eng xavfsiz Telegram mijozi bilan fishing va troyanlardan himoyalaning, bank o'tkazmalarini esa bir soniyada bajaring.
+                Zararli fayllar va troyanlardan ishonchli himoyalaning, bank kartalari orqali xavfsiz to'lovlarni bir zumda amalga oshiring.
               </p>
 
-              {/* Action buttons */}
+              {/* Action button */}
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
                 <a
-                  href="https://play.google.com/store/apps/details?id=org.telegram.messenger.web"
+                  href={SITE_CONFIG.playStoreUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-teal-400 text-white font-bold shadow-xl shadow-emerald-500/30 hover:scale-[1.02] active:scale-[0.98] transition-all"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-teal-400 text-white font-bold shadow-xl shadow-emerald-500/30 hover:scale-[1.02] active:scale-[0.98] transition-all border border-emerald-400/30"
                 >
                   <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
                     <path d="M3.609 1.814L13.792 12 3.61 22.186a2.008 2.008 0 0 1-.22-.382C3.13 21.242 3 20.478 3 19.578V4.422c0-.9.13-1.664.39-2.226.06-.134.133-.263.219-.382zM15.207 13.414l2.585 2.586-13.064 7.543 10.479-10.129zm2.585-2.828l-2.585 2.586L4.728.457l13.064 7.543a2.49 2.49 0 0 1 .49.387c.33.33.56.74.68 1.199a2.586 2.586 0 0 1-.17 1.001zm1.414 1.414a2.535 2.535 0 0 1-.414 1.415l-1.999-2 2-2c.264.426.413.918.413 1.415v1.17z"/>
@@ -53,16 +53,6 @@ export default function DownloadCTA() {
                     <div className="text-[10px] tracking-wider uppercase text-emerald-100 font-medium">Hoziroq yuklab oling</div>
                     <div className="text-base font-bold">Google Play Store</div>
                   </div>
-                </a>
-
-                <a
-                  href="https://api.safegram.uz/uploads/Safegram.apk"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-2xl bg-white/10 hover:bg-white/15 border border-white/20 text-white font-medium transition-all"
-                >
-                  <Download className="w-5 h-5 text-emerald-400" />
-                  <span>To'g'ridan-to'g'ri APK (118 MB)</span>
                 </a>
               </div>
             </div>
