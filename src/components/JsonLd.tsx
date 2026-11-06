@@ -13,7 +13,7 @@ export default function JsonLd() {
       "price": "0",
       "priceCurrency": "USD"
     },
-    "description": "Safegram — O'zbekistondagi eng xavfsiz va aqlli Telegram mijozi. Telegram MTProto protokoli asosida kiberxavfsizlik, zararli fayllarni bloklash, xufyona rejim va tezkor to'lovlar.",
+    "description": "Safegram — O'zbekistondagi eng xavfsiz va aqlli Telegram mijozi. Telegram MTProto protokoli asosida kiberxavfsizlik, zararli fayllarni bloklash va tezkor bulutli aloqa.",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.9",

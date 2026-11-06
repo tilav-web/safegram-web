@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | Safegram",
   },
   description:
-    "Safegram — rasmiy Telegram MTProto protokoli asosida yaratilgan kiberxavfsiz messenjer. Real vaqtda viruslarni bloklash, xufyona rejim va bir bosishda to'lovlar.",
+    "Safegram — rasmiy Telegram MTProto protokoli asosida yaratilgan kiberxavfsiz messenjer. Real vaqtda viruslarni bloklash va tezkor bulutli aloqa.",
   keywords: [
     "Safegram",
     "Telegram",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Safegram — Yangi Avlod Xavfsiz Messenjeri | Telegram Mijozi",
     description:
-      "Telegram protokoli asosida kiberxavfsiz, xufyona rejim va tezkor to'lovlarga ega Safegram ilovasini yuklab oling.",
+      "Telegram protokoli asosida kiberxavfsiz va tezkor bulutli aloqaga ega Safegram ilovasini yuklab oling.",
     url: SITE_CONFIG.url,
     siteName: "Safegram",
     images: [
@@ -80,7 +80,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Safegram — Yangi Avlod Xavfsiz Messenjeri | Telegram Mijozi",
     description:
-      "Zararli fayllardan himoyalangan, xufyona rejim va tezkor to'lovlarga ega Safegram messenjeri.",
+      "Zararli fayllardan himoyalangan va tezkor aloqaga ega Safegram messenjeri.",
     images: ["/safegram-logo.png"],
     creator: "@safegram_uz",
   },
