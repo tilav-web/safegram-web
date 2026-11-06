@@ -20,23 +20,29 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.url),
   title: {
-    default: "Safegram — Kiberxavfsiz va Aqlli Aloqa Platformasi",
+    default: "Safegram — Yangi Avlod Xavfsiz Messenjeri | Telegram Mijozi",
     template: "%s | Safegram",
   },
   description:
-    "Safegram — Yangi avlod kiberxavfsiz messenjeri. Real vaqtda virus va troyanlarni bloklash, bank kartalarini aqlli aniqlash va bir bosishda xavfsiz to'lovlar.",
+    "Safegram — rasmiy Telegram MTProto protokoli asosida yaratilgan kiberxavfsiz messenjer. Real vaqtda viruslarni bloklash, xufyona rejim va bir bosishda to'lovlar.",
   keywords: [
     "Safegram",
-    "xavfsiz messenjer",
-    "kiberxavfsizlik",
-    "antivirus ilova",
-    "Smart P2P",
-    "karta to'lovlari",
-    "karta aniqlash",
-    "Ruh rejimi",
-    "Ghost mode",
-    "Anti-Delete",
-    "Android xavfsiz ilova",
+    "Telegram",
+    "Telegram messenger",
+    "Telegram client",
+    "Safegram telegram",
+    "Telegram Uzbekistan",
+    "Telegram skachat",
+    "Telegram yuklab olish",
+    "Telegram yangi versiyasi",
+    "Xavfsiz telegram",
+    "Telegram antivirus",
+    "Telegram ghost mode",
+    "Telegram ruh rejimi",
+    "Telegram anti delete",
+    "Android messenger",
+    "Xavfsiz messenjer",
+    "Kiberxavfsizlik ilovasi",
   ],
   authors: [{ name: "Safegram Security Lab", url: SITE_CONFIG.url }],
   creator: "Safegram Security Lab",
@@ -54,9 +60,9 @@ export const metadata: Metadata = {
     apple: [{ url: "/safegram-icon.png", sizes: "180x180" }],
   },
   openGraph: {
-    title: "Safegram — Kiberxavfsiz va Aqlli Aloqa Platformasi",
+    title: "Safegram — Yangi Avlod Xavfsiz Messenjeri | Telegram Mijozi",
     description:
-      "Mutlaqo xavfsiz va qulay aloqa platformasi. Real-vaqtli antivirus himoyasi va 1 soniyalik tezkor to'lovlar.",
+      "Telegram protokoli asosida kiberxavfsiz, xufyona rejim va tezkor to'lovlarga ega Safegram ilovasini yuklab oling.",
     url: SITE_CONFIG.url,
     siteName: "Safegram",
     images: [
@@ -64,7 +70,7 @@ export const metadata: Metadata = {
         url: "/safegram-logo.png",
         width: 1200,
         height: 630,
-        alt: "Safegram — Kiberxavfsiz Aloqa Platformasi",
+        alt: "Safegram Messenger",
       },
     ],
     locale: "uz_UZ",
@@ -72,9 +78,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Safegram — Kiberxavfsiz va Aqlli Aloqa Platformasi",
+    title: "Safegram — Yangi Avlod Xavfsiz Messenjeri | Telegram Mijozi",
     description:
-      "Zararli fayllardan himoya va kartalarga 1 bosishda xavfsiz to'lov imkoniyati. Google Play'dan yuklab oling.",
+      "Zararli fayllardan himoyalangan, xufyona rejim va tezkor to'lovlarga ega Safegram messenjeri.",
     images: ["/safegram-logo.png"],
     creator: "@safegram_uz",
   },
@@ -101,7 +107,7 @@ export default function RootLayout({
       <head>
         <JsonLd />
       </head>
-      <body className="font-sans antialiased selection:bg-emerald-500 selection:text-white">
+      <body className="font-sans antialiased text-gray-200 bg-[#080c14] selection:bg-emerald-500/20 selection:text-emerald-300">
         {children}
       </body>
     </html>

@@ -1,12 +1,11 @@
 export const SITE_CONFIG = {
   name: "Safegram",
-  title: "Safegram — Kiberxavfsiz va Aqlli Aloqa Platformasi",
+  title: "Safegram — Yangi Avlod Xavfsiz Messenjeri | Telegram Mijozi",
   description:
-    "Zararli fayllar va troyanlardan avtomatik himoyalanish, bank kartalari orqali tezkor to'lovlar, xufyona rejim va maksimal tezlik.",
+    "Safegram — rasmiy Telegram MTProto protokoli asosida yaratilgan, real vaqtda zararli fayllardan himoyalangan, xufyona rejim va aqlli to'lov imkoniyatlariga ega xavfsiz messenjer.",
   url: "https://safegram.uz",
   playStoreUrl:
     process.env.NEXT_PUBLIC_PLAY_STORE_URL ||
     "https://play.google.com/store/apps/details?id=org.safegram.tilav",
-  supportUrl: "https://t.me/safegram_support",
   packageId: "org.safegram.tilav",
 };
